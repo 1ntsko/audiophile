@@ -1,0 +1,69 @@
+.user-info {
+  width: 100%;
+  height: 588px;
+  margin-bottom: 200px;
+  @include flex;
+  gap: 30px;
+
+  div {
+    width: 50%;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  .user-info-block-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 445px;
+
+    .user-info-block-heading {
+      text-transform: uppercase;
+      letter-spacing: 1.42857px;
+
+      span {
+        color: $color-red;
+      }
+    }
+
+    p {
+      opacity: 0.5;
+      margin-top: 32px;
+    }
+  }
+
+  .user-info-bg {
+    background-image: url('/assets/shared/desktop/image-best-gear.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 800px) {
+  .user-info {
+    flex-direction: column-reverse;
+    margin-bottom: 120px;
+
+    div {
+      width: 100%;
+    }
+
+    .user-info-block-wrapper {
+      max-width: 100%;
+      width: 573px;
+      text-align: center;
+
+      .user-info-block-heading {
+        font-size: 28px;
+      }
+    }
+
+    .user-info-bg {
+      background-image: url('/assets/shared/tablet/image-best-gear.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}

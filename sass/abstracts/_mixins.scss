@@ -1,0 +1,32 @@
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin typography($fontSize, $weight, $lineHeight, $letter-spacing) {
+  font-size: $fontSize;
+  font-weight: $weight;
+  line-height: $lineHeight;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin buttonStyles($bg-color, $border, $color) {
+  width: 160px;
+  height: 48px;
+  font-size: 13px;
+  background: $bg-color;
+  border: $border;
+  color: $color;
+  font-weight: $text-bold;
+  line-height: 17.76px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+
+@mixin buttonHoverStyles($bg-color, $color) {
+  background: $bg-color;
+  color: $color;
+  cursor: pointer;
+}

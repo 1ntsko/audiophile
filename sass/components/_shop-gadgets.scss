@@ -1,0 +1,129 @@
+.shop-gadgets {
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 168px;
+}
+
+#main-container {
+  padding: 0 200px;
+}
+
+.box-wrapper {
+  @include flex;
+
+  .box {
+    width: 350px;
+    height: 284px;
+    overflow: hidden;
+    position: relative;
+
+    .box-bg {
+      width: 100%;
+      height: 204px;
+      background-color: #f1f1f1;
+      border-radius: 8px;
+      bottom: 0;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h6 {
+        margin-top: 36px;
+      }
+
+      span {
+        font-weight: $text-bold;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        opacity: 0.5;
+        margin-top: 15px;
+        position: relative;
+      }
+
+      .shop-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        .span {
+          &:hover {
+            cursor: pointer;
+            color: $color-red;
+          }
+        }
+
+        .icon {
+          width: 5px;
+          height: 10px;
+          position: absolute;
+          right: 0;
+          top: 60%;
+          left: 110%;
+        }
+      }
+    }
+
+    img.head {
+      width: 12rem;
+      left: 25%;
+      z-index: 1;
+      position: absolute;
+    }
+  }
+}
+
+@media (max-width: 1438px) {
+  #main-container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 1074px) {
+  .shop-gadgets {
+    padding-top: 96px;
+  }
+}
+@media (max-width: 913px) {
+  #main-container {
+    padding: 0 10px;
+  }
+  .shop-gadgets {
+    padding-top: 96px;
+  }
+}
+
+@media (max-width: 850px) {
+  .shop-gadgets {
+    padding-bottom: 96px;
+  }
+  .box-wrapper {
+    flex-direction: column;
+
+    .box {
+      width: 70%;
+      margin-bottom: 20px;
+
+      img.head {
+        left: 32%;
+      }
+    }
+  }
+
+  .shop-gadgets {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .box-wrapper {
+    .box {
+      img.head {
+        left: 15%;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+button.default1 {
+  @include buttonStyles($color-red, none, $color-white);
+
+  &:hover {
+    @include buttonHoverStyles($color-lightRed, $color-white);
+  }
+}
+
+button.default2 {
+  @include buttonStyles(
+    $color-darkBlack,
+    1px solid $color-darkBlack,
+    $color-white
+  );
+
+  &:hover {
+    @include buttonHoverStyles($color-white, $color-darkBlack);
+  }
+}
+
+button.default3 {
+  @include buttonStyles($color-white, none, $color-darkBlack);
+  opacity: 0.5;
+
+  &:hover {
+    @include buttonHoverStyles(none, $color-red);
+  }
+}
+
+button.default4 {
+  @include buttonStyles(
+    $color-white,
+    1px solid $color-darkBlack,
+    $color-darkBlack
+  );
+  &:hover {
+    @include buttonHoverStyles($color-darkBlack, $color-white);
+  }
+}
