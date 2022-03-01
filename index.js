@@ -5,7 +5,8 @@ const nav = document.querySelector('.mobile-nav');
 const dropdownBasket = document.querySelector('.basket__dropdown');
 const overlay = document.querySelector('.overlay');
 
-const basket = document.getElementById('basket');
+// const basket = document.getElementById('basket');
+const basket = document.querySelector('#basket');
 
 x.addEventListener('click', () => {
   nav.style.left = '-100%';
@@ -18,3 +19,10 @@ burger.addEventListener('click', () => {
 basket.addEventListener('click', () => {
   overlay.classList.toggle('hidden');
 });
+
+// basket.forEach(i => {
+//   console.log(i);
+//   i.addEventListener('click', () => {
+//     overlay.classList.toggle('hidden');
+//   });
+// });

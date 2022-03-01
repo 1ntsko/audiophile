@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +20,7 @@ ul li a {
 }
 
 body {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 15px;
   line-height: 25px;
 }
@@ -81,10 +81,42 @@ h6 {
   letter-spacing: 1px;
 }
 
-.headphones {
-  color: blue;
+#headphones-pre-main {
+  height: 300px;
+}
+#headphones-pre-main .headphones-heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
+.user-info-section {
+  margin-top: 160px;
+}
+
+@media (max-width: 800px) {
+  #user-info {
+    flex-direction: column;
+  }
+}
+@media (max-width: 510px) {
+  #headphones-pre-main {
+    align-items: center;
+  }
+
+  .headphones-heading h1 {
+    font-size: 28px;
+  }
+
+  .user-info-section {
+    margin-top: 64px;
+  }
+}
 .earphones {
   color: red;
 }
@@ -176,13 +208,7 @@ h6 {
 .header #container .basket .basket__dropdown .main-block .total-row .total {
   opacity: 0.5;
 }
-.header
-  #container
-  .basket
-  .basket__dropdown
-  .main-block
-  .total-row
-  .total-price {
+.header #container .basket .basket__dropdown .main-block .total-row .total-price {
   font-weight: 700;
 }
 .header #container .basket .basket__dropdown .main-block .row {
@@ -197,14 +223,7 @@ h6 {
   align-items: center;
   font-weight: 700;
 }
-.header
-  #container
-  .basket
-  .basket__dropdown
-  .main-block
-  .row
-  .left-side
-  .headphones-info {
+.header #container .basket .basket__dropdown .main-block .row .left-side .headphones-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -212,26 +231,10 @@ h6 {
   align-items: flex-start;
   margin-left: 16px;
 }
-.header
-  #container
-  .basket
-  .basket__dropdown
-  .main-block
-  .row
-  .left-side
-  .headphones-info
-  .name {
+.header #container .basket .basket__dropdown .main-block .row .left-side .headphones-info .name {
   font-size: 15px;
 }
-.header
-  #container
-  .basket
-  .basket__dropdown
-  .main-block
-  .row
-  .left-side
-  .headphones-info
-  .price {
+.header #container .basket .basket__dropdown .main-block .row .left-side .headphones-info .price {
   font-size: 14px;
   opacity: 0.5;
 }
@@ -245,22 +248,8 @@ h6 {
   justify-content: space-around;
   font-size: 13px;
 }
-.header
-  #container
-  .basket
-  .basket__dropdown
-  .main-block
-  .row
-  .right-side
-  .minus,
-.header
-  #container
-  .basket
-  .basket__dropdown
-  .main-block
-  .row
-  .right-side
-  .plus {
+.header #container .basket .basket__dropdown .main-block .row .right-side .minus,
+.header #container .basket .basket__dropdown .main-block .row .right-side .plus {
   color: gray;
   cursor: pointer;
 }
@@ -298,7 +287,7 @@ h6 {
 }
 
 .header::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #ffffff;
   opacity: 0.2;
@@ -488,8 +477,7 @@ h6 {
   border-radius: 8px;
   margin-bottom: 48px;
   position: relative;
-  background: #d87d4a url('../../assets/home/desktop/pattern-circles.svg') -5% 40%
-    no-repeat;
+  background: #d87d4a url("../../assets/home/desktop/pattern-circles.svg") -5% 40% no-repeat;
   overflow: hidden;
 }
 .zx9-speaker .zx9-speaker-wrapper {
@@ -512,7 +500,7 @@ h6 {
   position: absolute;
   top: 14%;
   left: 10%;
-  background: url('../../assets/home/desktop/image-speaker-zx9.png');
+  background: url("../../assets/home/desktop/image-speaker-zx9.png");
   background-size: cover;
 }
 .zx9-speaker .speaker-main-block {
@@ -579,7 +567,7 @@ h6 {
   margin-bottom: 48px;
   height: 320px;
   border-radius: 8px;
-  background-image: url('/assets/home/desktop/image-speaker-zx7.jpg');
+  background-image: url("/assets/home/desktop/image-speaker-zx7.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -611,7 +599,7 @@ h6 {
   border-radius: 8px;
 }
 .zx1-section .zx1-speaker .zx1-speaker-img {
-  background-image: url('/assets/home/desktop/image-earphones-yx1.jpg');
+  background-image: url("/assets/home/desktop/image-earphones-yx1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -887,7 +875,7 @@ button.default4:hover {
   margin-top: 32px;
 }
 .user-info .user-info-bg {
-  background-image: url('/assets/shared/desktop/image-best-gear.jpg');
+  background-image: url("/assets/shared/desktop/image-best-gear.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -910,7 +898,7 @@ button.default4:hover {
     font-size: 28px;
   }
   .user-info .user-info-bg {
-    background-image: url('/assets/shared/tablet/image-best-gear.jpg');
+    background-image: url("/assets/shared/tablet/image-best-gear.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -951,7 +939,7 @@ button.default4:hover {
 }
 
 .before::before {
-  content: '';
+  content: "";
   width: 101px;
   height: 4px;
   background-color: #d87d4a;

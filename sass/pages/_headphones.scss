@@ -1,3 +1,38 @@
-.headphones {
-  color: blue;
+#headphones-pre-main {
+  height: 300px;
+
+  .headphones-heading {
+    width: 100%;
+    @include flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-white;
+    text-transform: uppercase;
+  }
+}
+
+.user-info-section {
+  margin-top: 160px;
+}
+
+@media (max-width: 800px) {
+  #user-info {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 510px) {
+  #headphones-pre-main {
+    align-items: center;
+  }
+
+  .headphones-heading {
+    h1 {
+      font-size: 28px;
+    }
+  }
+
+  .user-info-section {
+    margin-top: 64px;
+  }
 }
