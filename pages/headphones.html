@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Headphones</title>
     <link rel="stylesheet" href="../css/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <div class="overlay hidden"></div>
@@ -20,28 +21,6 @@
               />
             </label>
             <input type="checkbox" id="burger" />
-            <nav class="mobile-nav">
-              <div id="close-par">
-                <label for="close">
-                  <span class="close">&#10006;</span>
-                </label>
-                <input type="checkbox" id="close" />
-              </div>
-              <ul class="navbar mobile-navbar-list">
-                <li>
-                  <a href="#">home</a>
-                </li>
-                <li>
-                  <a href="./pages/headphones.html">headphones</a>
-                </li>
-                <li>
-                  <a href="./pages/speakers.html">speakers</a>
-                </li>
-                <li>
-                  <a href="./pages/earphones.html">earphones</a>
-                </li>
-              </ul>
-            </nav>
           </div>
 
           <div class="logo">
@@ -50,16 +29,16 @@
           <nav>
             <ul class="navbar">
               <li>
-                <a href="#">home</a>
+                <a href="/index.html">home</a>
               </li>
               <li>
-                <a href="./pages/headphones.html">headphones</a>
+                <a href="#">headphones</a>
               </li>
               <li>
-                <a href="./pages/speakers.html">speakers</a>
+                <a href="./speakers.html">speakers</a>
               </li>
               <li>
-                <a href="./pages/earphones.html">earphones</a>
+                <a href="./earphones.html">earphones</a>
               </li>
             </ul>
           </nav>
@@ -308,16 +287,16 @@
           <nav>
             <ul class="navbar">
               <li>
-                <a href="#">home</a>
+                <a href="/index.html">home</a>
               </li>
               <li>
-                <a href="./pages/headphones.html">headphones</a>
+                <a href="#">headphones</a>
               </li>
               <li>
-                <a href="./pages/speakers.html">speakers</a>
+                <a href="./speakers.html">speakers</a>
               </li>
               <li>
-                <a href="./pages/earphones.html">earphones</a>
+                <a href="./earphones.html">earphones</a>
               </li>
             </ul>
           </nav>
@@ -365,5 +344,10 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
