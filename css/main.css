@@ -19,6 +19,15 @@ ul li a {
   text-decoration: none;
 }
 
+input {
+  line-height: inherit;
+}
+
+input:focus {
+  cursor: pointer;
+  border: 1px solid #d87d4a;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   font-size: 15px;
@@ -655,6 +664,185 @@ h6 {
   width: 70%;
   padding: 54px 48px;
 }
+.forms-section .checkout-section h1 {
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.forms-section .checkout-section fieldset.fld-1 {
+  margin-bottom: 2rem;
+}
+.forms-section .checkout-section fieldset.fld-1 .fld-1-legend {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #d87d4a;
+  margin-bottom: 1rem;
+}
+.forms-section .checkout-section fieldset.fld-1 .fld-1-form {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+.forms-section .checkout-section fieldset.fld-1 .fld-1-form .fld-1-name .label-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.forms-section .checkout-section fieldset.fld-1 .fld-1-form .fld-1-name .label-wrapper .name-label {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: -0.21px;
+  margin-bottom: 0.5rem;
+}
+.forms-section .checkout-section fieldset.fld-1 .fld-1-form .fld-1-name .name-input {
+  width: 100%;
+  min-width: 0;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  position: relative;
+  appearance: none;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 14px;
+  border: 1px solid #cfcfcf;
+}
+.forms-section .checkout-section fieldset.fld-1 .fld-1-form .fld-1-name .name-input:focus {
+  cursor: pointer;
+  border: 1px solid #d87d4a;
+}
+.forms-section .checkout-section .fld-2-form {
+  display: grid;
+  grid-template-areas: "a a" "b c" "d .";
+  gap: 1em;
+  grid-template-columns: 1fr 1fr;
+}
+.forms-section .checkout-section .fld-2-form .fld-2-address {
+  grid-area: a/a/a/a;
+}
+.forms-section .checkout-section .fld-2-form .fld-2-address .fld-2-label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.forms-section .checkout-section .fld-2-form .fld-2-address .fld-2-label-wrapper .address-label {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: -0.21px;
+  margin-bottom: 0.5rem;
+}
+.forms-section .checkout-section .fld-2-form .fld-2-address input {
+  width: 100%;
+  min-width: 0;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  position: relative;
+  appearance: none;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 14px;
+  border: 1px solid #cfcfcf;
+}
+.forms-section .checkout-section .fld-2-form .fld-2-address input:focus {
+  cursor: pointer;
+  border: 1px solid #d87d4a;
+}
+.forms-section .checkout-section .fld-2-form .fld-1-name .fld2-input {
+  width: 100%;
+  min-width: 0;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  position: relative;
+  appearance: none;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 14px;
+  border: 1px solid #cfcfcf;
+}
+.forms-section .checkout-section .fld-2-form .fld-1-name .fld2-input:focus {
+  cursor: pointer;
+  border: 1px solid #d87d4a;
+}
+.forms-section .checkout-section .fld-3 .fld-3-one {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+.forms-section .checkout-section .fld-3 .fld-3-one p {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: -0.21px;
+  margin-bottom: 0.5rem;
+}
+.forms-section .checkout-section .fld-3 .fld-3-one .radio-group .eMoney {
+  border-width: 1px;
+  border-style: solid;
+  border-image: initial;
+  border-color: #f1f1f1;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--chakra-fontWeights-bold);
+  font-size: 0.875rem;
+  display: block;
+  padding-left: 3.25rem;
+  position: relative;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.forms-section .checkout-section .fld-3 .fld-3-one .radio-group .eMoney .radio-radio {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-image: initial;
+  border-color: red;
+  border-radius: 50%;
+  position: absolute;
+  left: 1rem;
+}
+.forms-section .checkout-section .fld-3 .fld-3-two {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.forms-section .checkout-section .fld-3 .fld-3-two .last input {
+  width: 100%;
+  min-width: 0;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  position: relative;
+  appearance: none;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 14px;
+  border: 1px solid #cfcfcf;
+}
+.forms-section .checkout-section .fld-3 .fld-3-two .last input:focus {
+  cursor: pointer;
+  border: 1px solid #d87d4a;
+}
 .forms-section .summary {
   background-color: white;
   border-radius: 8px;
@@ -723,6 +911,25 @@ h6 {
   margin-top: 32px;
 }
 
+@media (max-width: 430px) {
+  .fld-1-form,
+.fld-2-form {
+    grid-template-columns: 1fr !important;
+  }
+
+  .fld-2-form {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .fld-3 .fld-3-one {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .fld-3 .fld-3-two {
+    flex-direction: column;
+  }
+}
 @media (max-width: 838px) {
   .forms-section {
     flex-direction: column;
@@ -733,7 +940,6 @@ h6 {
     width: 100%;
   }
   .forms-section .checkout-section {
-    height: 1133px;
     padding: 30px;
   }
 }

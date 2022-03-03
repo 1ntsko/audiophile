@@ -36,3 +36,24 @@
   background-position: center;
   background-size: cover;
 }
+
+@mixin inputStyles {
+  width: 100%;
+  min-width: 0;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  position: relative;
+  appearance: none;
+  font-weight: $text-bold;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 14px;
+  border: 1px solid $border-color;
+
+  &:focus {
+    cursor: pointer;
+    border: 1px solid $color-red;
+  }
+}

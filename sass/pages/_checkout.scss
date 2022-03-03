@@ -6,22 +6,164 @@
 .forms-section {
   width: 100%;
   height: 1126px;
-  // border: 10px solid red;
   display: flex;
   gap: 30px;
 
   .checkout-section {
-    // border: 5px solid purple;
     background-color: white;
     border-radius: 8px;
     position: relative;
     width: 70%;
     padding: 54px 48px;
     // overflow: hidden;
+
+    h1 {
+      font-size: 32px;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+
+    fieldset.fld-1 {
+      margin-bottom: 2rem;
+
+      .fld-1-legend {
+        @include typography(13px, $text-bold, 25px, 1px);
+        text-transform: uppercase;
+        color: $color-red;
+        margin-bottom: 1rem;
+      }
+
+      .fld-1-form {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+
+        .fld-1-name {
+          .label-wrapper {
+            display: flex;
+            justify-content: space-between;
+
+            .name-label {
+              @include typography(12px, $text-bold, 16px, -0.21px);
+              margin-bottom: 0.5rem;
+            }
+          }
+
+          .name-input {
+            @include inputStyles;
+          }
+        }
+      }
+    }
+
+    // fieldset 2
+    .fld-2-form {
+      display: grid;
+      grid-template-areas: "a a" "b c" "d .";
+      gap: 1em;
+      grid-template-columns: 1fr 1fr;
+
+      .fld-2-address {
+        grid-area: a / a / a / a;
+
+        .fld-2-label-wrapper {
+          @include flex;
+
+          .address-label {
+            @include typography(12px, $text-bold, 16px, -0.21px);
+            margin-bottom: 0.5rem;
+          }
+        }
+
+        input {
+          @include inputStyles;
+        }
+      }
+
+      .fld-1-name {
+        .fld2-input {
+          @include inputStyles;
+        }
+      }
+    }
+
+    // fieldset 3
+    .fld-3 {
+      .fld-3-one {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+
+        p {
+          @include typography(12px, $text-bold, 16px, -0.21px);
+          margin-bottom: 0.5rem;
+        }
+
+        .radio-group {
+          .eMoney {
+            // @include inputStyles;
+            border-width: 1px;
+            border-style: solid;
+            border-image: initial;
+            border-color: $color-gray;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-radius: 0.5rem;
+            font-weight: var(--chakra-fontWeights-bold);
+            font-size: 0.875rem;
+            display: block;
+            padding-left: 3.25rem;
+            position: relative;
+            margin-bottom: 1rem;
+            cursor: pointer;
+
+            // .inp {
+            //   border: 0px;
+            //   clip: rect(0px, 0px, 0px, 0px);
+            //   height: 1px;
+            //   width: 1px;
+            //   margin: -1px;
+            //   padding: 0px;
+            //   overflow: hidden;
+            //   white-space: nowrap;
+            //   position: absolute;
+            // }
+
+            .radio-radio {
+              display: flex;
+              -webkit-box-align: center;
+              align-items: center;
+              -webkit-box-pack: center;
+              justify-content: center;
+              width: 20px;
+              height: 20px;
+              border-width: 1px;
+              border-style: solid;
+              border-image: initial;
+              border-color: red;
+              border-radius: 50%;
+              position: absolute;
+              left: 1rem;
+            }
+          }
+        }
+      }
+
+      .fld-3-two {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+
+        .last {
+          input {
+            @include inputStyles;
+          }
+        }
+      }
+    }
   }
 
   .summary {
-    // border: 5px solid green;
     background-color: white;
     border-radius: 8px;
     position: relative;
@@ -70,8 +212,6 @@
       }
 
       .summary-total-row {
-        // @include flex;
-        // flex-direction: column;
         margin-top: 32px;
 
         .sm-t-ch {
@@ -92,6 +232,29 @@
   }
 }
 
+@media (max-width: 430px) {
+  .fld-1-form,
+  .fld-2-form {
+    grid-template-columns: 1fr !important;
+  }
+
+  .fld-2-form {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .fld-3 {
+    .fld-3-one {
+      display: flex !important;
+      flex-direction: column;
+    }
+
+    .fld-3-two {
+      flex-direction: column;
+    }
+  }
+}
+
 @media (max-width: 838px) {
   .forms-section {
     flex-direction: column;
@@ -103,7 +266,7 @@
     }
 
     .checkout-section {
-      height: 1133px;
+      // height: 1133px;
       padding: 30px;
     }
 

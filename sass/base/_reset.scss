@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
 
 * {
   margin: 0;
@@ -18,4 +18,13 @@ ul li {
     color: black;
     text-decoration: none;
   }
+}
+
+input {
+  line-height: inherit;
+}
+
+input:focus {
+  cursor: pointer;
+  border: 1px solid $color-red;
 }
