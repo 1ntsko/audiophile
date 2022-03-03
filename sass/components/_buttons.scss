@@ -1,4 +1,4 @@
-button.default1 {
+.default1 {
   @include buttonStyles($color-red, none, $color-white);
 
   &:hover {

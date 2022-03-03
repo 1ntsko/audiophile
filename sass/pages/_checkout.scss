@@ -1,0 +1,114 @@
+.checkout-main {
+  padding: 142px 0;
+  background-color: $color-gray;
+}
+
+.forms-section {
+  width: 100%;
+  height: 1126px;
+  // border: 10px solid red;
+  display: flex;
+  gap: 30px;
+
+  .checkout-section {
+    // border: 5px solid purple;
+    background-color: white;
+    border-radius: 8px;
+    position: relative;
+    width: 70%;
+    padding: 54px 48px;
+    // overflow: hidden;
+  }
+
+  .summary {
+    // border: 5px solid green;
+    background-color: white;
+    border-radius: 8px;
+    position: relative;
+    width: 30%;
+    padding: 32px;
+    height: 612px;
+    // overflow: hidden;
+
+    .summary-info {
+      @include flex;
+    }
+
+    .summary-main-block {
+      margin-top: 31px;
+
+      .summary-row {
+        @include flex;
+        margin-top: 24px;
+
+        .summary-left-side {
+          @include flex;
+          font-weight: $text-bold;
+
+          img {
+            width: 64px;
+            height: 64px;
+            border-radius: 8px;
+          }
+
+          .summary-headphones-info {
+            @include flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 16px;
+          }
+        }
+
+        .summary-right-side {
+          @include flex;
+          justify-content: space-around;
+          width: 96px;
+          height: 32px;
+          background-color: $color-gray;
+          font-size: 13px;
+        }
+      }
+
+      .summary-total-row {
+        // @include flex;
+        // flex-direction: column;
+        margin-top: 32px;
+
+        .sm-t-ch {
+          @include flex;
+          margin-bottom: 8px;
+        }
+      }
+
+      form {
+        width: 100%;
+
+        .default1 {
+          width: 100%;
+          margin-top: 32px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 838px) {
+  .forms-section {
+    flex-direction: column;
+    height: auto;
+
+    .checkout-section,
+    .summary {
+      width: 100%;
+    }
+
+    .checkout-section {
+      height: 1133px;
+      padding: 30px;
+    }
+
+    // .summary {
+    //   height: 612px;
+    // }
+  }
+}

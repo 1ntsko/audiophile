@@ -1,19 +1,20 @@
-@import './abstracts/mixins';
-@import './abstracts/variables';
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
 
-@import './base/reset';
-@import './base/typography';
+@import "./base/reset";
+@import "./base/typography";
 
-@import './pages/headphones';
-@import './pages/earphones';
-@import './pages/home';
-@import './pages/speakers';
+@import "./pages/headphones";
+@import "./pages/earphones";
+@import "./pages/home";
+@import "./pages/speakers";
+@import "./pages/checkout";
 
-@import './components/buttons';
-@import './components/overlay';
-@import './components/shop-gadgets';
-@import './components/user-info';
+@import "./components/buttons";
+@import "./components/overlay";
+@import "./components/shop-gadgets";
+@import "./components/user-info";
 
-@import './layout/footer';
+@import "./layout/footer";
 
 // @import './';
