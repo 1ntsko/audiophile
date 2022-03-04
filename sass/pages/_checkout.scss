@@ -169,8 +169,7 @@
     position: relative;
     width: 30%;
     padding: 32px;
-    height: 612px;
-    // overflow: hidden;
+    height: min-content;
 
     .summary-info {
       @include flex;
@@ -232,7 +231,32 @@
   }
 }
 
+@media (max-width: 838px) {
+  .checkout-main {
+    padding-top: 97px;
+    padding-bottom: 97px;
+  }
+  .forms-section {
+    flex-direction: column;
+    height: auto;
+
+    .checkout-section,
+    .summary {
+      width: 100%;
+    }
+
+    .checkout-section {
+      padding: 30px;
+    }
+  }
+}
+
 @media (max-width: 430px) {
+  .checkout-main {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
   .fld-1-form,
   .fld-2-form {
     grid-template-columns: 1fr !important;
@@ -247,31 +271,16 @@
     .fld-3-one {
       display: flex !important;
       flex-direction: column;
+
+      .radio-group {
+        .eMoney {
+          padding-left: 1rem !important;
+        }
+      }
     }
 
     .fld-3-two {
       flex-direction: column;
     }
-  }
-}
-
-@media (max-width: 838px) {
-  .forms-section {
-    flex-direction: column;
-    height: auto;
-
-    .checkout-section,
-    .summary {
-      width: 100%;
-    }
-
-    .checkout-section {
-      // height: 1133px;
-      padding: 30px;
-    }
-
-    // .summary {
-    //   height: 612px;
-    // }
   }
 }
