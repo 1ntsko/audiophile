@@ -131,7 +131,7 @@
   grid-template-areas: "a c" "b c";
 
   .person {
-    grid-area: a / a / a / a;
+    grid-area: a;
 
     .person-img {
       @include grid-gallery-img;
@@ -139,7 +139,7 @@
   }
 
   .stuff {
-    grid-area: b / b / b / b;
+    grid-area: b;
 
     .stuff-img {
       @include grid-gallery-img;
@@ -147,7 +147,7 @@
   }
 
   .headphones {
-    grid-area: c / c / c / c;
+    grid-area: c;
 
     .headphones-img {
       @include grid-gallery-img;
@@ -157,9 +157,8 @@
 
 @media (max-width: 580px) {
   .grid-gallery {
-    display: flex;
-    flex-direction: column;
     grid-template-columns: 1fr;
+    grid-template-areas: "a" "b" "c";
   }
 }
 
