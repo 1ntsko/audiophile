@@ -191,6 +191,23 @@ h6 {
   position: relative;
   z-index: 100;
 }
+.header #container .basket::after {
+  content: "3";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background-color: #d87d4a;
+  border-radius: 50%;
+  text-align: center;
+  top: -40%;
+  left: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 0.7em;
+}
 .header #container .basket #basket {
   cursor: pointer;
 }
@@ -1078,7 +1095,7 @@ h6 {
   grid-template-areas: "a c" "b c";
 }
 .grid-gallery .person {
-  grid-area: a/a/a/a;
+  grid-area: a;
 }
 .grid-gallery .person .person-img {
   object-fit: cover;
@@ -1087,7 +1104,7 @@ h6 {
   height: 100%;
 }
 .grid-gallery .stuff {
-  grid-area: b/b/b/b;
+  grid-area: b;
 }
 .grid-gallery .stuff .stuff-img {
   object-fit: cover;
@@ -1096,7 +1113,7 @@ h6 {
   height: 100%;
 }
 .grid-gallery .headphones {
-  grid-area: c/c/c/c;
+  grid-area: c;
 }
 .grid-gallery .headphones .headphones-img {
   object-fit: cover;
@@ -1107,9 +1124,8 @@ h6 {
 
 @media (max-width: 580px) {
   .grid-gallery {
-    display: flex;
-    flex-direction: column;
     grid-template-columns: 1fr;
+    grid-template-areas: "a" "b" "c";
   }
 }
 .may-like-section {
