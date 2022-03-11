@@ -47,7 +47,7 @@
           </div>
         </div>
 
-        <button class="default1">Back To Home</button>
+        <button class="default1" id="close-modal">Back To Home</button>
       </div>
     </div>
     <div id="box">
@@ -391,7 +391,10 @@
                 </div>
               </div>
               <form action="/pages/checkout.html">
-                <button class="default1 summary-checkout">
+                <button
+                  class="default1 summary-checkout"
+                  id="open-modal-window"
+                >
                   continue & pay
                 </button>
               </form>
@@ -468,5 +471,21 @@
         </div>
       </div>
     </footer>
+
+    <script type="text/javascript">
+      const modalWindow = document.querySelector(".modal");
+
+      document.getElementById("close-modal").addEventListener("click", (e) => {
+        e.preventDefault();
+        modalWindow.style.display = "none";
+      });
+
+      document
+        .getElementById("open-modal-window")
+        .addEventListener("click", (e) => {
+          e.preventDefault();
+          modalWindow.style.display = "block";
+        });
+    </script>
   </body>
 </html>
