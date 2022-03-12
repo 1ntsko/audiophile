@@ -234,13 +234,7 @@ h6 {
 .header #container .basket .basket__dropdown .main-block .total-row .total {
   opacity: 0.5;
 }
-.header
-  #container
-  .basket
-  .basket__dropdown
-  .main-block
-  .total-row
-  .total-price {
+.header #container .basket .basket__dropdown .main-block .total-row .total-price {
   font-weight: 700;
 }
 .header #container .basket .basket__dropdown .main-block .row {
@@ -255,14 +249,7 @@ h6 {
   align-items: center;
   font-weight: 700;
 }
-.header
-  #container
-  .basket
-  .basket__dropdown
-  .main-block
-  .row
-  .left-side
-  .headphones-info {
+.header #container .basket .basket__dropdown .main-block .row .left-side .headphones-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -270,26 +257,10 @@ h6 {
   align-items: flex-start;
   margin-left: 16px;
 }
-.header
-  #container
-  .basket
-  .basket__dropdown
-  .main-block
-  .row
-  .left-side
-  .headphones-info
-  .name {
+.header #container .basket .basket__dropdown .main-block .row .left-side .headphones-info .name {
   font-size: 15px;
 }
-.header
-  #container
-  .basket
-  .basket__dropdown
-  .main-block
-  .row
-  .left-side
-  .headphones-info
-  .price {
+.header #container .basket .basket__dropdown .main-block .row .left-side .headphones-info .price {
   font-size: 14px;
   opacity: 0.5;
 }
@@ -303,22 +274,8 @@ h6 {
   justify-content: space-around;
   font-size: 13px;
 }
-.header
-  #container
-  .basket
-  .basket__dropdown
-  .main-block
-  .row
-  .right-side
-  .minus,
-.header
-  #container
-  .basket
-  .basket__dropdown
-  .main-block
-  .row
-  .right-side
-  .plus {
+.header #container .basket .basket__dropdown .main-block .row .right-side .minus,
+.header #container .basket .basket__dropdown .main-block .row .right-side .plus {
   color: gray;
   cursor: pointer;
 }
@@ -546,8 +503,7 @@ h6 {
   border-radius: 8px;
   margin-bottom: 48px;
   position: relative;
-  background: #d87d4a url("../../assets/home/desktop/pattern-circles.svg") -5% 40%
-    no-repeat;
+  background: #d87d4a url("../../assets/home/desktop/pattern-circles.svg") -5% 40% no-repeat;
   overflow: hidden;
 }
 .zx9-speaker .zx9-speaker-wrapper {
@@ -747,34 +703,18 @@ h6 {
   gap: 1rem;
   grid-template-columns: 1fr 1fr;
 }
-.forms-section
-  .checkout-section
-  fieldset.fld-1
-  .fld-1-form
-  .fld-1-name
-  .label-wrapper {
+.forms-section .checkout-section fieldset.fld-1 .fld-1-form .fld-1-name .label-wrapper {
   display: flex;
   justify-content: space-between;
 }
-.forms-section
-  .checkout-section
-  fieldset.fld-1
-  .fld-1-form
-  .fld-1-name
-  .label-wrapper
-  .name-label {
+.forms-section .checkout-section fieldset.fld-1 .fld-1-form .fld-1-name .label-wrapper .name-label {
   font-size: 12px;
   font-weight: 700;
   line-height: 16px;
   letter-spacing: -0.21px;
   margin-bottom: 0.5rem;
 }
-.forms-section
-  .checkout-section
-  fieldset.fld-1
-  .fld-1-form
-  .fld-1-name
-  .name-input {
+.forms-section .checkout-section fieldset.fld-1 .fld-1-form .fld-1-name .name-input {
   width: 100%;
   min-width: 0;
   outline: transparent solid 2px;
@@ -789,12 +729,7 @@ h6 {
   font-size: 14px;
   border: 1px solid #cfcfcf;
 }
-.forms-section
-  .checkout-section
-  fieldset.fld-1
-  .fld-1-form
-  .fld-1-name
-  .name-input:focus {
+.forms-section .checkout-section fieldset.fld-1 .fld-1-form .fld-1-name .name-input:focus {
   cursor: pointer;
   border: 1px solid #d87d4a;
 }
@@ -807,21 +742,12 @@ h6 {
 .forms-section .checkout-section .fld-2-form .fld-2-address {
   grid-area: a/a/a/a;
 }
-.forms-section
-  .checkout-section
-  .fld-2-form
-  .fld-2-address
-  .fld-2-label-wrapper {
+.forms-section .checkout-section .fld-2-form .fld-2-address .fld-2-label-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.forms-section
-  .checkout-section
-  .fld-2-form
-  .fld-2-address
-  .fld-2-label-wrapper
-  .address-label {
+.forms-section .checkout-section .fld-2-form .fld-2-address .fld-2-label-wrapper .address-label {
   font-size: 12px;
   font-weight: 700;
   line-height: 16px;
@@ -894,13 +820,7 @@ h6 {
   margin-bottom: 1rem;
   cursor: pointer;
 }
-.forms-section
-  .checkout-section
-  .fld-3
-  .fld-3-one
-  .radio-group
-  .eMoney
-  .radio-radio {
+.forms-section .checkout-section .fld-3 .fld-3-one .radio-group .eMoney .radio-radio {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -968,22 +888,12 @@ h6 {
   align-items: center;
   font-weight: 700;
 }
-.forms-section
-  .summary
-  .summary-main-block
-  .summary-row
-  .summary-left-side
-  img {
+.forms-section .summary .summary-main-block .summary-row .summary-left-side img {
   width: 64px;
   height: 64px;
   border-radius: 8px;
 }
-.forms-section
-  .summary
-  .summary-main-block
-  .summary-row
-  .summary-left-side
-  .summary-headphones-info {
+.forms-section .summary .summary-main-block .summary-row .summary-left-side .summary-headphones-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1029,7 +939,7 @@ h6 {
     height: auto;
   }
   .forms-section .checkout-section,
-  .forms-section .summary {
+.forms-section .summary {
     width: 100%;
   }
   .forms-section .checkout-section {
@@ -1043,7 +953,7 @@ h6 {
   }
 
   .fld-1-form,
-  .fld-2-form {
+.fld-2-form {
     grid-template-columns: 1fr !important;
   }
 
